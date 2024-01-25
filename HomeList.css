@@ -201,13 +201,13 @@ td>div>svg{
 }
 
 
-/* @keyframes animateSectionBackground {
+@keyframes animateSectionBackground {
     00% { background-image: url(assets/banner-img.jpg); }
     20% { background-image: url(assets/banner2.jpg); }
     40% { background-image: url(assets/banner3.jpg); }
     60% { background-image: url(assets/banner4.jpg); }
     80% { background-image: url(assets/banner5.jpg); }
-  } */
+  }
 
   @media only screen and (max-width: 501px) {
     .Setting_table_inside{
@@ -453,7 +453,13 @@ td>div>svg{
   /* Carosal For Trending Project Owl Carosal */
 
   /* Feature Destination Section */
-
+  .image_card_fd{
+    display: flex;
+    flex-shrink: 0;
+   scroll-snap-align: start;
+   scroll-behavior: smooth;
+   margin-right: 20px;
+  }
   .parent1{
     position: relative;
     top: 0;
@@ -520,6 +526,7 @@ td>div>svg{
     transition: all .3s ease-in-out;
       transform: scale(1.03);
   }
+  
  
   /* Most Affordable Section */
   .parent2{
@@ -545,11 +552,11 @@ td>div>svg{
     left: 0;
   }
   #Image_width_adjust_maf{
-    width: 259px;
+    width: 257px;
     height: 250px;
   }
   #Image_width_adjust_shadwo_maf{
-    width: 259px;
+    width: 257px;
     height: 250px;
   }
   .parent2{
@@ -588,11 +595,11 @@ td>div>svg{
         height: 175px;
       }
       #Image_width_adjust_maf{
-        width: 200px;
+        width: 205px;
         height: 250px;
       }
       #Image_width_adjust_shadwo_maf{
-        width: 200px;
+        width: 205px;
         height: 250px;
       }
     }
@@ -727,7 +734,7 @@ td>div>svg{
       }
   }
   /* For Big laptop */
-  @media  only screen and (min-width: 1455px){
+  @media  only screen and (min-width: 1555px){
     #Image_width_adjust{
         width: 325px;
       }
@@ -798,12 +805,124 @@ td>div>svg{
     padding-right: 2px;
     font-size: 27px;
   }
+  .bottomline{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
   .bottomline > h3{
+    margin-top: 5px;
     font-size: 13.5px;
+    color:rgb(229 59 81); 
+    
   }
   .bottomline > h4{
     font-size: 15px;
+    color: rgb(66 169 190);
   }
+  @media  only screen and (max-width: 756px){
+    .bottomline > h4{
+      font-size: 10px;
+    }
+  }
+  @media  only screen and (max-width: 500px){
+    .bottomline > h4{
+      font-size: 15px;
+    }
+    
+  }
+  .footer_main{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(69 72 72);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text_fot{
+    display: flex;
+    margin-right: 50px;
+  }
+  .logo_fot img{
+    margin-left: 50px;
+    width: 120px;
+  }
+  .contact_us_fot > h4, .faq >h4{
+    font-size: 16px;
+    padding-left: 30px;
+    color: #ffffff;
+  }
+  /* Remove Footer Of Site */
+  @media  only screen and (max-width: 760px){
+  footer{
+    display: none;
+  }
+    
+  }
+  @media  only screen and (max-width: 599px){
+    #Image_width_adjust{
+      width: 485px;
+    }
+    #Image_width_adjust_shadwo img {
+      width: 485px;
+    }
+    #Image_width_adjust_fd{
+      width: 200px;
+    }
+    #Image_width_adjust_shadwo_fd{
+      width: 200px;
+    }
+    #Image_width_adjust_maf{
+      width: 483px;
+    }
+    #Image_width_adjust_shadwo_maf{
+    width: 483px;
+    }
+  }
+
+  @media  only screen and (max-width: 472px){
+    #Image_width_adjust{
+      width: 350px;
+    }
+    #Image_width_adjust_shadwo img {
+      width: 350px;
+    }
+    #Image_width_adjust_fd{
+      width: 150px;
+    }
+    #Image_width_adjust_shadwo_fd{
+      width: 150px;
+    }
+    #Image_width_adjust_maf{
+      width: 350px;
+    }
+    #Image_width_adjust_shadwo_maf{
+    width: 350px;
+    }
+  }
+  @media  only screen and (max-width: 376px){
+    #Image_width_adjust{
+      width: 250px;
+    }
+    #Image_width_adjust_shadwo img {
+      width: 250px;
+    }
+    #Image_width_adjust_fd{
+      width: 120px;
+    }
+    #Image_width_adjust_shadwo_fd{
+      width: 120px;
+    }
+    #Image_width_adjust_maf{
+      width: 250px;
+    }
+    #Image_width_adjust_shadwo_maf{
+    width: 250px;
+    }
+  }
+
+  /* Carosal Css Code */
+ 
 
 
 
