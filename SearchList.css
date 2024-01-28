@@ -99,3 +99,21 @@ header{
         }
         
     }
+    .container_main{
+        width: 100%;
+        background-color: #f4f4f4;
+        height: 120px;
+    }
+.tabel_container{
+   margin-right: 10px;
+    margin-left: 10px;
+}
+table{
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
+}
+td{
+    color: #4cb1c3;
+    float: left;
+}

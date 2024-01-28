@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Page</title>
-    <link rel="stylesheet" href="SearchList.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Page</title>
+  <link rel="stylesheet" href="SearchList.css">
 </head>
+
 <body>
-    <section id="Srch">
+  <section id="Srch">
     <div class="image_main" id="mydiv">
-        <!-- Header Start here -->
-        <header>
-            <img class="chekbtn" src="assets/menu_1.svg" alt="Menu Icon" style="width: 30px; fill: #d94f5a;">
+      <!-- Header Start here -->
+      <header>
+        <img class="chekbtn" src="assets/menu_1.svg" alt="Menu Icon" style="width: 30px; fill: #d94f5a;">
 
-            <div class="header_container">
-                <div class="connect_login_space">
-                    <img src="assets/logo.png" alt="Volunteer Overseas Header Image">
-                    <h4 class="header_right_part how_its_work mobile_how_it"><a href="#Home">How Its Work</a></h4>
-                    <h4 class="header_right_part contact_us_heading"><a href="#Home">Contact Us</a></h4>
-                    <div class="rightsection">
-                        <h4><a href="#Srch">Login</a></h4>
-                    </div>
-                </div>
+        <div class="header_container">
+          <div class="connect_login_space">
+            <img src="assets/logo.png" alt="Volunteer Overseas Header Image">
+            <h4 class="header_right_part how_its_work mobile_how_it"><a href="#Home">How Its Work</a></h4>
+            <h4 class="header_right_part contact_us_heading"><a href="#Home">Contact Us</a></h4>
+            <div class="rightsection">
+              <h4><a href="#Srch">Login</a></h4>
             </div>
-        </header>
+          </div>
+        </div>
+      </header>
 
-    
+
     </div>
-</section>
+  </section>
 
-<Section id="options_of_result">
-    
-</Section>
-    
+  <Section id="options_of_result">
+    <div class="tabel_container" style="overflow-x:auto;">
+      <table>
+        <form action="">
+          <tbody>
+            <tr>
+              <td>Cause</td>
+              <td>Country </td>
+              <td>Activity</td>
+            <tr>
+              <td>
+                <input type="checkbox" checked><label for="Volunteer">Volunteer</label>
+                <input type="checkbox"><label for="Tech">Tech</label>
+                <input type="checkbox"><label for="Intern">Intern</label>
+              </td>
+              <td>
+                <input type="text" placeholder="Search Country">
+              </td>
+              <td>
+                <select name="Activity" id="actvi">
+                  <option value="animal">Animal Conversation</option>
+                </select>
+              </td>
+              <td>
+                <input type="submit" value="More Filter">
+              </td>
+            </tr>
+          </tbody>
+
+        </form>
+      </table>
+    </div>
+  </Section>
+
 </body>
+
 </html>
