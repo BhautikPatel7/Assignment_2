@@ -4,8 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Your existing styles and scripts -->
   <title>Search Page</title>
   <link rel="stylesheet" href="SearchList.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  
 </head>
 
 <body>
@@ -30,41 +38,306 @@
 
     </div>
   </section>
-
-  <Section id="options_of_result">
-    <div class="tabel_container" style="overflow-x:auto;">
-      <table>
+  <section id="options_of_result">
+    <div class="Search_container">
         <form action="">
-          <tbody>
-            <tr>
-              <td>Cause</td>
-              <td>Country </td>
-              <td>Activity</td>
-            <tr>
-              <td>
-                <input type="checkbox" checked><label for="Volunteer">Volunteer</label>
-                <input type="checkbox"><label for="Tech">Tech</label>
-                <input type="checkbox"><label for="Intern">Intern</label>
-              </td>
-              <td>
-                <input type="text" placeholder="Search Country">
-              </td>
-              <td>
-                <select name="Activity" id="actvi">
-                  <option value="animal">Animal Conversation</option>
-                </select>
-              </td>
-              <td>
-                <input type="submit" value="More Filter">
-              </td>
-            </tr>
-          </tbody>
-
+            <div style="display: flex; justify-content: space-between;">
+                <div style="flex: 1;">
+                    <h3 style="font-size: 14px; color:#4cb1c3; margin-bottom: 24px;" >Cause</h3>
+                    <input type="checkbox" checked ><label for="Volunteer" style="font-size: 16px;">Volunteer</label>
+                    <input type="checkbox" ><label for="Tech" style="font-size: 16px;">Tech</label>
+                    <input type="checkbox" ><label for="Intern" style="font-size: 16px;">Intern</label>
+                </div>
+                <div style="flex: 1;margin-right: 35px;">
+                    <h3 style="font-size: 14px; color:#4cb1c3;  margin-bottom: 12px;">Country</h3>
+                    <input type="text" placeholder="Search Country" style="font-size: 16px;">
+                </div>
+                <div style="flex: 1;margin-right: 35px;">
+                    <h3 style="font-size: 14px; color:#4cb1c3; margin-bottom: 12px;" >Activity</h3>
+                    <select name="Activity" id="actvi" style="font-size: 16px;">
+                        <option value="animal" style="font-size: 16px;">Animal Conservation</option>
+                    </select>
+                </div>
+                <div style="position: relative; display: inline-block;">
+                    <button type="submit" style="background-color: #ffffff; color: #4cb1c3; border: 2px solid #4cb1c3; padding: 8px; font-size: 14px; cursor: pointer; margin-top: 27px;">
+                        More Filter
+                    </button>
+                    <span style="position: absolute;top: 15px;right: -10px;background-color: #4cb1c3;color: #ffffff;border-radius: 50%;padding: 6px;font-size: 12px;width: 30%;text-align: center;">4</span>
+                </div>
+                
+            </div>
         </form>
-      </table>
+        </div>
+    </section>
+
+  <Section id="main_content_search">
+    <div class="srch_result">
+      <div class="result329">
+        <h6 style="font-size: 16px;">329 Results</h6>
+      </div>
+      <div class="srt_rela">
+        <div class="sortby">
+          <h6 style="">Sort by:</h6>
+          <div class="relavancy">
+            <select name="resultpage" id="resultpage" style="font-size: 14px; font-weight: 200;">
+              <option value="relavance">Relavancy</option>
+              <option value="time">Time</option>
+              <option value="last-updates">Last Updates</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </div>
   </Section>
 
+  <section id="Image_conatiner">
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="bottom_image_line">
+
+
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="bottom_image_line">
+          <div class="image_with_text">
+            <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+            <div class="top-left">
+              <h6>Medical Volunte</h6>
+            </div>
+          </div>
+          <div class="bottom_design">
+            <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+            <div class="logo-and-text">
+              <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+              <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+            </div>
+            <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+              duration</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <div class="image_with_text">
+          <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+          <div class="top-left">
+            <h6>Medical Volunte</h6>
+          </div>
+        </div>
+        <div class="bottom_design">
+          <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+          <div class="logo-and-text">
+            <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+            <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+          </div>
+          <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+            duration</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image_with_text">
+          <img class="img_size" src="assets/photo01.jpg" alt="photo01">
+          <div class="top-left">
+            <h6>Medical Volunte</h6>
+          </div>
+        </div>
+        <div class="bottom_design">
+          <h5 style="font-size: 16px; font-weight: 100;">Volunteer With Tigers</h5>
+          <div class="logo-and-text">
+            <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
+            <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
+          </div>
+          <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+            duration</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer_main">
+        <div class="logo_fot">
+            <img src="assets/logo_1.png" alt="Footer Logo">
+        </div>
+        <div class="text_fot">
+            <div class="faq">
+                <h4>faq</h4>
+            </div>
+            <div class="contact_us_fot">
+                <h4>Contact Us</h4>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
