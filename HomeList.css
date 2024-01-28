@@ -925,6 +925,49 @@ td>div>svg{
   }
 
   /* Carosal Css Code */
+  .owl-prev, .owl-next {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    border:2px solid black;
+}
+.owl-prev { left: -08px; }
+.owl-next { right: -08px; }
+.owl-prev i, .owl-next i {transform : scale(2,5); color: #b32828;}
+
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  background: #fff !important;
+  border: 0px solid #eedfcc !important;
+  border-radius: 50% !important;
+  color: #3498db !important;
+  width: 40px !important;  
+    height: 45px !important; 
+  font-size: 16px !important; 
+  line-height: 35px !important;
+  font-size: 40px !important;
+  opacity: 0.7 !important;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel button.owl-dot.active {
+  background: #3498db !important;
+  color: #fff !important;
+}
+.owl-next{
+  right: 6px;
+}
+.owl-prev{
+  left: -17px;
+}
+
+  
  
 
 
