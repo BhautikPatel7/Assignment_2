@@ -961,11 +961,33 @@ td>div>svg{
   color: #fff !important;
 }
 .owl-next{
-  right: 6px;
+  right: 5px;
 }
 .owl-prev{
   left: -17px;
 }
+
+@media  only screen and (max-width: 480px){
+  .owl-next{
+    right: -17px !important;
+  }
+}
+@media  only screen and (max-width: 741px){
+  .owl-next{
+    right: -18px !important;
+  }
+}
+@media  only screen and (min-width: 1119px) and (max-width:1351){
+  .owl-next{
+    right: 69px !important;
+  }
+}
+@media  only screen and (min-width: 1353){
+  .owl-next{
+    right: -15px !important;
+  }
+}
+
 
   
  

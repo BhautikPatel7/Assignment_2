@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+/* Header Part Start From Here */
+header{
+    width: 100%;
+    border: 1px solid rgb(232, 231, 231);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+}
+.header_container img{
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 64px;
+    
+    }
+    .how_its_work{
+        margin-right: 20px;
+    }
+    .rightsection h4 a{
+        display: inline;
+        padding: 8px;
+        font-size: 14px;
+        color: #4cb1c3;
+        border: 1px solid #4cb1c3;
+        text-decoration: none;
+    }
+    .rightsection h4 a:hover{
+        text-decoration: none;
+        color: #d94f5a;
+        font-size: 20px;
+        background-color: #fff;
+    }
+    .header_container{
+        margin-left: 50px;
+        margin-right: 50px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .connect_login_space{
+        align-items: center;
+        flex: 1;
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-start;
+    }
+    .rightsection{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header_right_part a{
+        color: #4cb1c3;
+        text-decoration: none;
+    }
+    .chekbtn{
+        float: right;
+        margin-top: 50px;
+        line-height: 135px;
+        margin-right: 18px;
+        cursor: pointer;
+        display: none;
+    }
+    .mobile_menu_set>h4{
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+    }
+    .mobilemenusetup{
+        display: none;
+    }
+    @media only screen and (max-width: 487px){
+        .rightsection h4{
+            display: none;
+        }
+        .header_right_part{
+            display: none;
+        }
+        .mobile_menu_set>h4{
+            display: block;
+        }
+        .chekbtn{
+            display: block;
+            width: 12px;
+            margin-left: 5px;
+        }
+        .mobilemenusetup{
+            display: block;
+           text-align: center;
+        }
+        img .chekbtn{
+            width: 100px;
+        }
+        
+    }
