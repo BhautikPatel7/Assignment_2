@@ -49,7 +49,7 @@ margin-right: 64px;
 .rightsection h4 a:hover{
     text-decoration: none;
     color: #464646;
-    font-size: 20px;
+    
     background-color: #a0f9db;
 }
 .header_container{
@@ -598,11 +598,11 @@ td>div>svg{
         height: 175px;
       }
       #Image_width_adjust_maf{
-        width: 205px;
+        width: 329px;
         height: 250px;
       }
       #Image_width_adjust_shadwo_maf{
-        width: 205px;
+        width: 329px;
         height: 250px;
       }
     }
