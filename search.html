@@ -41,6 +41,7 @@
 
     </div>
   </section>
+  <div class="bgclr">
   <section id="options_of_result">
     <div class="table1">
       <table>
@@ -54,18 +55,29 @@
           <td></td>
         </tr>
         <tr id="second-row ">
-          <td id="chechboxes" style="display: flex; padding-top: 7px;">
-            <div class="custom-control custom-checkbox custom-control-inline custom-control-success">
-              <input type="checkbox" class="custom-control-input " id="volunteer" checked>
-              <label class="custom-control-label" for="volunteer" style="padding-left: 18px; font-size: 11px; color: #9a9c9e;">Volunteer</label>
-              <div class="custom-control custom-checkbox custom-control-inline custom-control-success">
-                <input type="checkbox" class="custom-control-input" id="tech">
-                <label class="custom-control-label" for="tech" style="padding-left: 18px; font-size: 11px; color: #9a9c9e;">Teach</label>
-                <div class="custom-control custom-checkbox custom-control-inline custom-control-success">
-                  <input type="checkbox" class="custom-control-input" id="intern">
-                  <label class="custom-control-label" for="intern" style="padding-left: 18px; font-size: 11px; color: #9a9c9e;">Intern</label>
+          <td id="chechboxes" style="display: flex; padding-top: 9px; margin-left: 14px;">
+            <div class="checkbox-container">
+              <input type="checkbox" id="cb1" style="width: 14px; height: 12px;" checked>
+              <label for="cb1" style="color: 333333; font-weight: 100;" >Volunteer </label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="cb2" style="width: 14px; height: 12px;">
+              <label for="cb2" style="color: 333333; font-weight: 100;">Teach</label>
+            </div>
+            <br>
+            <div class="checkbox-container">
+              <input type="checkbox" id="cb3" style="width: 14px; height: 12px;">
+              <label for="cb3" style="color: 333333; font-weight: 100;">Intern</label>
+            </div>
+            <br>    
+
           </td>
-          <td><input id="textbox" type="text" placeholder="Search Country"></td>
+          <td>
+            <div class="user_name floatleft fix">
+            <input id="textbox" type="text" placeholder="Search Country">
+            </div>
+          </td>
 
           <td><select id="select" name="Activity" id="activity" class="select_activity">
               <option value="Animal Conversion" style="color: #46729d;">Animal Conversion</option>
@@ -73,8 +85,11 @@
               <option value="Animal Conversion">Animal Conversion</option>
             </select></td>
           <td>
-            <button id="full-button"><span id="text">more filters</span>
-              <span class="badge">4</span>
+            <button id="full-button"><span id="text">More filter</span>
+              <span class="badge" id="mobile_badge">4</span>
+            </button>
+            <button id="tab" class="fill-tab"><span id="text">...</span>
+              <span class="badge" style="background-color: #4cb1c3;">4</span>
             </button>
           </td>
         </tr>
@@ -88,19 +103,20 @@
     </div>
       <div style="position: relative; display: inline-block;">
         <button class="more_flt_btn" type="submit"
-          style="background-color: #ffffff; color: #4cb1c3; border: 2px solid #4cb1c3; padding: 6px; font-size: 10px; cursor: pointer; margin-top: 45px;">
-          More Filter
+          style="background-color: #ffffff; color: #4cb1c3; width: 70px; border: 2px solid #4cb1c3; padding: 6px; font-size: 10px; cursor: pointer; margin-top: 45px;">
+      More Filter
         </button>
-        <span
+        <span class="mobile_badge"
           style="position: absolute;top: -10px;right: -6px;background-color: #4cb1c3;color: #ffffff;border-radius: 50%;padding: 6px;font-size: 8px;width: 30%;text-align: center;">4</span>
       </div>
     </div>
   </section>
+</div>
 
   <Section id="main_content_search">
     <div class="srch_result">
       <div class="result329">
-        <h6 style="font-size: 16px;">329 Results</h6>
+        <h6 id="mob_329" style="font-size: 16px; margin-left: -4px;">329 Results</h6>
       </div>
       <div class="srt_rela">
         <div class="sortby">
