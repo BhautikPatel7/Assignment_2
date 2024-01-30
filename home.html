@@ -27,17 +27,26 @@
 <body>
     <section id="Home">
         <div class="image_main" id="mydiv">
+           
+            <div class="imageupper">
             <!-- Header Start here -->
+              <!-- <div class="image_bng">  <img id="bgd_image" src="assets/banner-img.jpg" alt="">
+                                
+                            </div>
+                            <div class="image_sh"><img id="image_bng_shadow" src="assets/bg.png"
+                                    alt="Balck Shadow">
+                            </div>
+                            <div class="content_bg"> -->
             <header>
                 <img class="chekbtn" src="assets/menu.svg" alt="Menu Icon" style="width: 30px;">
 
                 <div class="header_container">
                     <div class="connect_login_space">
                         <img src="assets/logo_1.png" alt="Volunteer Overseas Header Image">
-                        <h4 class="header_right_part how_its_work mobile_how_it"><a href="#Home">How Its Work</a></h4>
-                        <h4 class="header_right_part contact_us_heading"><a href="#Home">Contact Us</a></h4>
+                        <h4 class="header_right_part how_its_work mobile_how_it"><a href="#Home" style="font-size: 16PX;">HOW IT WORKS</a></h4>
+                        <h4 class="header_right_part contact_us_heading"><a href="#Home" style="font-size: 16PX;">CONTACT US</a></h4>
                         <div class="rightsection">
-                            <h4><a href="#Home">Login</a></h4>
+                            <h4><a href="#Home" style="padding-left: 20PX; padding-right: 20px; border-radius: 3PX;">Login</a></h4>
                         </div>
                     </div>
                 </div>
@@ -86,7 +95,7 @@
                                 </div>
                             </td>
                             <td class="Setting_table_inside">
-                                <h4>Anywhere</h4>
+                                <div ><input id="Anywhere_" type="text" placeholder="Anywhere" style="text-align: center;"></div>
                             </td>
                             <td class="Setting_table_inside">
                                 <div class="making_flex_for_down" >
@@ -115,8 +124,8 @@
                                     </svg>
                                 </div>
                             </td>
-                            <td class="search_btn Setting_table_inside">
-                                <input type="submit" value="Search" class="btn">
+                            <td class="search_btn">
+                                <input type="submit" value="Search" class="btn" style="color: #FFFFFF; font-weight: 500;">
                             </td>
                         </tr>
                     </form>
@@ -131,7 +140,7 @@
                                 <th class="top left bottom">Type</th>
 
                                 <th class="top right bottom"><select name="Volunteer Abroad"
-                                        id="Volunteer_Abroad_mobile">
+                                        id="Volunteer_Abroad_mobile" style="font-size: 18px;">
                                         <option value="Volunteer Abroad">Volunteer Abroad</option>
                                         <option value="Volunteer Abroad">Volunteer Abroad</option>
                                         <option value="Volunteer Abroad">Volunteer Abroad</option>
@@ -142,13 +151,13 @@
                             <tr>
                                 <th class="top left bottom">Location</th>
                                 <th class="top right bottom">
-                                    <h4 id="anywhere_mobile" style="font-size: 21px; font-weight: 400;">Anywhere</h4>
+                                    <h4 id="anywhere_mobile" style="font-size: 18px; font-weight: 400;">Anywhere</h4>
 
                                 </th>
                             </tr>
                             <tr>
                                 <th class="top left bottom">Activity</th>
-                                <th class="top right bottom"><select name="Anything" id="Anything_mobile">
+                                <th class="top right bottom"><select name="Anything" id="Anything_mobile" style="font-size: 18px;">
                                         <option value="Anything">Anything</option>
                                         <option value="Anything">Anything</option>
                                         <option value="Anything">Anything</option>
@@ -157,7 +166,7 @@
                             </tr>
                             <tr id="Search_btn">
                                 <th class="search_btn_mobile top left bottom right" id="Search_btn" colspan="2">
-                                    <center><a href="search.html" target="_blank"><input class="Search_btn_mob" type="submit" value="Search" ></a></center>
+                                    <center><a href="search.html" target="_blank"><input class="Search_btn_mob" type="submit" value="Search"  style="font-size: 18px;"></a></center>
                                 </th>
                             </tr>
                         </tbody>
@@ -166,6 +175,8 @@
                 </form>
             </div>
         </div>
+     </div>
+    </div>
         </div>
     </section>
     <!-- Trending Project Section -->
@@ -502,7 +513,7 @@
         responsive: {
             0: { items: 1, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
                 600: { items: 2, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
-                860: { items: 3, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
+                860: { items: 4, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
                 1352: { items: 4, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
                 navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         }
@@ -518,7 +529,7 @@
         responsive: {
             0: { items: 2, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
                 600: { items: 3, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
-                860: { items: 4, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
+                860: { items: 6, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
                 1352: { items: 6, margin: 20, touchDrag: true, freeDrag: true, dots: false, autoplay: true, nav: true },
                 navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         }
@@ -534,9 +545,9 @@
         nav: true,
         responsive: {
             0: { items: 1, margin: 20, touchDrag: true, freeDrag: true, autoplay: true },
-            600: { items: 2, margin: 20, touchDrag: true, freeDrag: true, autoplay: true },
-            860: { items: 4, margin: 20, touchDrag: true, freeDrag: true, autoplay: true },
-            1312: { items: 5, margin: 20, touchDrag: true, freeDrag: true, autoplay: true },
+            600: { items: 3, margin: 20, touchDrag: true, freeDrag: true, autoplay: true },
+            800: { items: 5, margin: 20, touchDrag: true, freeDrag: true, autoplay: true },
+            1280: { items: 5, margin: 20, touchDrag: true, freeDrag: true, autoplay: true },
             1603: { items: 5, margin: 20, touchDrag: true, freeDrag: true, autoplay: true, nav: true },
             navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         }
