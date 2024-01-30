@@ -29,10 +29,10 @@
         <div class="header_container">
           <div class="connect_login_space">
             <img src="assets/logo.png" alt="Volunteer Overseas Header Image">
-            <h4 class="header_right_part how_its_work mobile_how_it"><a href="#Home">How Its Work</a></h4>
-            <h4 class="header_right_part contact_us_heading"><a href="#Home">Contact Us</a></h4>
+            <h4 class="header_right_part how_its_work mobile_how_it" style="font-size: 16px;"><a href="#Home">HOW IT WORKS</a></h4>
+            <h4 class="header_right_part contact_us_heading" style="font-size: 16px;"><a href="#Home">CONTACT US</a></h4>
             <div class="rightsection">
-              <h4><a href="#Srch">Login</a></h4>
+              <h4 ><a href="#Srch" style="padding-left: 23px; padding-right: 23px;">Login</a></h4>
             </div>
           </div>
         </div>
@@ -42,43 +42,43 @@
     </div>
   </section>
   <section id="options_of_result">
-    <div class="Search_container">
+    <div class="table1">
+      <table>
+        <tr id="first-row">
+          <td id="first-column"><h6 style="font-size: 14px; margin-left: 15px;">Cause</h6></td>
+          <td id="second-column">Counry</td>
+          <td id="third-column">Activity</td>
+          <td id="last-column"></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr id="second-row ">
+          <td id="chechboxes" style="display: flex; padding-top: 7px;">
+            <div class="custom-control custom-checkbox custom-control-inline custom-control-success">
+              <input type="checkbox" class="custom-control-input " id="volunteer" checked>
+              <label class="custom-control-label" for="volunteer" style="padding-left: 18px; font-size: 11px; color: #9a9c9e;">Volunteer</label>
+              <div class="custom-control custom-checkbox custom-control-inline custom-control-success">
+                <input type="checkbox" class="custom-control-input" id="tech">
+                <label class="custom-control-label" for="tech" style="padding-left: 18px; font-size: 11px; color: #9a9c9e;">Teach</label>
+                <div class="custom-control custom-checkbox custom-control-inline custom-control-success">
+                  <input type="checkbox" class="custom-control-input" id="intern">
+                  <label class="custom-control-label" for="intern" style="padding-left: 18px; font-size: 11px; color: #9a9c9e;">Intern</label>
+          </td>
+          <td><input id="textbox" type="text" placeholder="Search Country"></td>
 
-
-      <form action="">
-        <div style="display: flex; justify-content: space-between;">
-          <div style="flex: 1;">
-
-            <h3 style="font-size: 14px; color:#4cb1c3; margin-bottom: 24px;" >Cause</h3>
-            <input type="checkbox" checked ><label for="Volunteer" style="font-size: 16px; padding-left: 6px; padding-right: 5px"><p class="chekbox_texte" style="font-weight: 100; margin-top: 1px !important;">Volunteer</p></label>
-            <input type="checkbox" ><label for="Tech" style="font-size: 16px; padding-left: 6px; padding-right: 5px"><p class="chekbox_texte" style="font-weight: 100;" >Tech</p></label>
-            <input type="checkbox" ><label for="Intern" style="font-size: 16px; padding-left: 6px; padding-right: 5px"><p class="chekbox_texte" style="font-weight: 100;">Intern</p></label>
-
-        </div>
-          <div style="flex: 1;margin-right: 35px;">
-            <h3 style="font-size: 14px; color:#4cb1c3;  margin-bottom: 12px;">Country</h3>
-            <input type="text" placeholder="Search Country" style="font-size: 16px;">
-          </div>
-          <div style="flex: 1;margin-right: 35px;">
-            <h3 style="font-size: 14px; color:#4cb1c3; margin-bottom: 12px;">Activity</h3>
-            <select name="Activity" id="actvi" style="font-size: 16px;">
-              <option value="animal" style="font-size: 16px;">Animal Conservation</option>
-              <option value="animal" style="font-size: 16px;">Animal Conservation</option>
-              <option value="animal" style="font-size: 16px;">Animal Conservation</option>
-              <option value="animal" style="font-size: 16px;">Animal Conservation</option>
-            </select>
-          </div>
-          <div style="position: relative; display: inline-block;">
-            <button type="submit"
-              style="background-color: #ffffff; color: #4cb1c3; border: 2px solid #4cb1c3; padding: 8px; font-size: 14px; cursor: pointer; margin-top: 45px;">
-              More Filter
+          <td><select id="select" name="Activity" id="activity" class="select_activity">
+              <option value="Animal Conversion" style="color: #46729d;">Animal Conversion</option>
+              <option value="Animal Conversion">Animal Conversion</option>
+              <option value="Animal Conversion">Animal Conversion</option>
+            </select></td>
+          <td>
+            <button id="full-button"><span id="text">more filters</span>
+              <span class="badge">4</span>
             </button>
-            <span
-              style="position: absolute;top: 29px;right: -11px;background-color: #4cb1c3;color: #ffffff;border-radius: 50%;padding: 6px;font-size: 12px;width: 30%;text-align: center;">4</span>
-          </div>
-
-        </div>
-      </form>
+          </td>
+        </tr>
+      </table>
     </div>
     <!-- View For Mobile  -->
     <div class="mob_cont">
@@ -137,7 +137,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 class="lw_volunteer" style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -158,7 +158,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 class="lw_volunteer"  style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -179,7 +179,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 class="lw_volunteer"  style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -209,7 +209,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 class="lw_volunteer"  style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week  &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -230,7 +230,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 class="lw_volunteer"  style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week  &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -251,7 +251,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 class="lw_volunteer"  style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -282,7 +282,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -303,7 +303,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -324,7 +324,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -354,7 +354,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -375,7 +375,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -396,7 +396,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -426,7 +426,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -447,7 +447,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -468,7 +468,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -498,7 +498,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -519,7 +519,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -540,7 +540,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -570,7 +570,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -591,7 +591,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -612,7 +612,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -642,7 +642,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -663,7 +663,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -684,7 +684,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -714,7 +714,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -735,7 +735,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -756,7 +756,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -786,7 +786,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -807,7 +807,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -828,7 +828,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -858,7 +858,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -879,7 +879,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -900,7 +900,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -930,7 +930,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -951,7 +951,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -972,7 +972,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week  &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -1002,7 +1002,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -1023,7 +1023,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -1044,7 +1044,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week  &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -1074,7 +1074,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -1095,7 +1095,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -1116,7 +1116,7 @@
                     <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                     <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                   </div>
-                  <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                  <p style="font-size: 14px;">$215/week  &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                     duration</p>
                 </div>
               </div>
@@ -1146,7 +1146,7 @@
                   <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                   <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                 </div>
-                <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                   duration</p>
               </div>
             </div>
@@ -1167,7 +1167,7 @@
                   <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                   <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                 </div>
-                <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                <p style="font-size: 14px;">$215/week  &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                   duration</p>
               </div>
             </div>
@@ -1188,7 +1188,7 @@
                   <img class="volunteer_lg" src="assets/volunteer-logo01.png" alt="logo">
                   <h6 style="font-size: 14px; font-weight: 100; padding-left: 3px; color: #4cb1c3;;">Love Volunteers</h6>
                 </div>
-                <p style="font-size: 14px;">$215/week &nbsp; &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
+                <p style="font-size: 14px;">$215/week &nbsp;<span style="color: #d94f5a;">. &nbsp;</span>1-12 weeks
                   duration</p>
               </div>
             </div>
